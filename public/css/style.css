@@ -1,0 +1,163 @@
+/*import google fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: /*your code here*/0;
+    padding: /*your code here*/0;
+    /*your code here*/
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family: /*your code here*/
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    color: #151515;
+}
+
+.form-container{
+ text-align: center; /* Keskmesta vormi tekst */
+ padding: 20px;
+}
+.movie-card {
+    margin-top: /*your code here*/4rem;
+    height: 800px;
+    text-align: /*your code here*/center;
+}
+
+.movie-title {
+    text-transform: /*your code here*/uppercase;
+    transform: translateY(-150px);
+    animation: slide-from-top 3.5s ease-in-out forwards;
+}
+@keyframes slide-from-top {
+    80% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }}
+
+.movie-poster-container img {
+    margin-top: 2rem;
+    height: /*your code here*/450px;
+    border-radius:/*your code here*/5%;
+    position: relative;
+    left: -50rem;
+    animation: slide-from-left 3.5s ease-in-out forwards;
+}
+@keyframes slide-from-left {
+    80% {left: 1.5rem;}
+    100% {left: 0;}
+}
+
+.movie-rating {
+    display: /*your code here*/inline-block;
+    border: 1px solid #151515;
+    padding: /*your code here*/5px;
+    border-radius: 5px;
+}
+
+.movie-duration {
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+    
+}
+
+.movie-duration:before {
+    content:/*your code here*/"\2022";
+}
+
+.movie-info-quote {
+    color: #151515a4;
+    font-style: /*your code here*/italic;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.movie-info-overview-title {
+    text-transform: /*your code here*/capitalize;
+    letter-spacing: 0.1rem;
+    
+}
+
+.movie-info-actions {
+    font-size:1.1rem;
+}
+
+.movie-info-actions ul {
+    list-style: none;
+}
+
+.movie-info-actions ul li {
+    display: /*your code here*/inline-block;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(3, 37, 65);
+    
+    
+}
+
+.movie-info-actions ul li a {
+    text-decoration: /*your code here*/none;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: /*your code here*/center;
+    color: #777;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: /*your code here*/inline-block;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+footer ul li a {
+    font-size: 1.5rem;
+    text-transform: /*your code here*/uppercase;
+    text-decoration: none;
+    color: #777;
+}
+.movie-info-container{
+    opacity: 0;
+    animation: fade-in 3.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes fade-in {100% {opacity: 1;}
+}
+
+ul{
+    rotate: 5deg;
+    animation: rota 3.5s ease-in-out forwards;
+}
+
+@keyframes rota{100%{rotate: 0deg;}}
+
+#p{
+    margin-top: 2rem;
+}
+
+/* body{
+  background-color: aqua;
+} */
